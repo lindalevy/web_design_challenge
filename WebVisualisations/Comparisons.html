@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Summary</title>
+  <title>Comparisions fo Visualisations</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -36,61 +36,50 @@
                             <a class="dropdown-item" href="WebVisualisations/windspeed.html">Wind Speed</a>
                             <a class="dropdown-item" href="Index.html">Home</a>
                         </div>
-                        <li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Comparisons.html">Comparison's</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cities.html">Cities Data</a>
-                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     
     <!--create container, rows and columns and add images -->
+   <!--main screen if this link is selected-->
+         
     <div class="container content">    
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="col-md-12">
                     <h3>Weather Visualisations of Cities across the World </h3>
                     <hr>
-                    <p> Presented here are visualisations of the weather in over 500 cities across the world of varying distance from the equator. </p> 
-                    <p>The source of data was the OpenWeatherMap API</p>
-                    <p>Scatter plots showcase the relations of the latitude of a city to the following: Temperature, Humidity, Cloudiness and Wind Speed.</p>
                 </div>
             </div>
 
-<!--images on right hand side of screen-->
-            <div class="col-md-4">
+<!--images on the screen-->
+            <div class="col-md-12">
                 <div class="col-md-12">
-                    <h3>Weather Visualisations</h3>
-                    <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
+                            <p> Lattitude V's Maximum Temperature</p>
                             <a href="WebVisualisations/temperature.html"><img src="WebVisualisations/Resources/assets/images/Fig1.png" width="100%"  alt="temperature">
                             </a> 
                         </div>
-                        <div class="caption">
-                            <h7>Temperature</h7>
-                        </div>
                         <div class="col-3 col-md-6">
+                            <p> Lattitude V's Humidity</p>
                             <a href="WebVisualisations/humidity.html"><img src="WebVisualisations/Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
                         </div>
-                        <div class="caption">
-                            <h7>Humidity</h7>
-                        </div>
                         <div class="col-3 col-md-6">
+                            <p> Lattitude V's Cloudiness</p>
                             <a href="WebVisualisations/cloudiness.html"><img src="WebVisualisations/Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
                         </div>
-                        <div class="caption">
-                            <h7>Cloudiness</h7>
-                        </div>
                         <div class="col-3 col-md-6">
+                            <p> Lattitude V's Wind Speed</p>
                             <a href="WebVisualisations/windspeed.html"><img src="WebVisualisations/Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
-                        </div>
-                        <div class="caption">
-                            <h7>Wind Speed</h7>      
                         </div>
                     </div>
                 </div>

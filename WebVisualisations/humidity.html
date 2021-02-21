@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Summary</title>
+  <title>Latitude v's Humidity</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -13,16 +13,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<!--drop down box in Navigation bar-->
 
+<!--drop down box in Navigation bar-->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand text-white" href="index.html" >Latitude</a>
+            <a class="navbar-brand text-white" href="index.html">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+                
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">    
                     <li class="nav-item dropdown">
@@ -30,74 +29,76 @@
                             Visualisations
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="Webvisualisations/temperature.html">Maximum Temperature</a>
-                            <a class="dropdown-item" href="WebVisualisations/humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="WebVisualisations/cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="WebVisualisations/windspeed.html">Wind Speed</a>
-                            <a class="dropdown-item" href="Index.html">Home</a>
+                            <a class="dropdown-item" href="temperature.html">Maximum Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                            <a class="dropdown-item" href="../Index.html">Home</a>
                         </div>
-                        <li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Comparisons.html">Comparison's</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cities.html">Cities Data</a>
-                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <!--create container, rows and columns and add images -->
-    <div class="container content">    
+
+    <!--image if this link is selected-->
+    <div class="container content">
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>Weather Visualisations of Cities across the World </h3>
+                    <h3>Humidity</h3>
                     <hr>
-                    <p> Presented here are visualisations of the weather in over 500 cities across the world of varying distance from the equator. </p> 
-                    <p>The source of data was the OpenWeatherMap API</p>
-                    <p>Scatter plots showcase the relations of the latitude of a city to the following: Temperature, Humidity, Cloudiness and Wind Speed.</p>
+                    
+                    <img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity">
+                    <br>
+                    <p>There is no direct relationship between the latitude of a city and the humidity, however:</p>
+                    <p>....Most cities reported humdity above 40%</p>>
+                    <p>....Extremes of latitude were more likely to produce higher humidity (latitude below-40, and above 40)</p>     
                 </div>
             </div>
 
-<!--images on right hand side of screen-->
+            
+            <!--images on right hand side of screen-->
             <div class="col-md-4">
                 <div class="col-md-12">
                     <h3>Weather Visualisations</h3>
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="WebVisualisations/temperature.html"><img src="WebVisualisations/Resources/assets/images/Fig1.png" width="100%"  alt="temperature">
-                            </a> 
+                            <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="temprature">
+                            </a>
                         </div>
                         <div class="caption">
                             <h7>Temperature</h7>
-                        </div>
+                        </div>                       
                         <div class="col-3 col-md-6">
-                            <a href="WebVisualisations/humidity.html"><img src="WebVisualisations/Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
+                            <a href="humidity.html"><img class="pic" src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
                         </div>
                         <div class="caption">
                             <h7>Humidity</h7>
-                        </div>
+                        </div> 
                         <div class="col-3 col-md-6">
-                            <a href="WebVisualisations/cloudiness.html"><img src="WebVisualisations/Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
+                            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
                         </div>
                         <div class="caption">
                             <h7>Cloudiness</h7>
-                        </div>
+                        </div> 
                         <div class="col-3 col-md-6">
-                            <a href="WebVisualisations/windspeed.html"><img src="WebVisualisations/Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
+                            <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="windspeed"></a>
                         </div>
                         <div class="caption">
-                            <h7>Wind Speed</h7>      
-                        </div>
+                            <h7>Wind Speed</h7>
+                        </div> 
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>            
+        </div>    
     </div>
-    
-
 </body>
 </html>
